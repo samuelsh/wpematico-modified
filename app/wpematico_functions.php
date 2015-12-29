@@ -818,16 +818,14 @@ function bb_parse_content( $content ) {
 		$content .= '<tr>';
 		$content .= '<td><span class="podPress_content"><img src="http://www.laitman.ru/wp-content/plugins/podpress/images/video_mp4_icon.png" 
 				border="0" align="top" class="podPress_imgicon" alt="icon for podpress">&nbsp;<strong>Видео (рус.)</strong>: <a href="#" rel="nofollow" 
-				onclick="javascript: podPressShowHidePlayer(\''.($i + 1).'\',\''. $links_array[$link_index]. '\',320,267,\'true\'); return false;">
-				<span id="podPressPlayerSpace_'.($i + 1).'_PlayLink">Открыть</span></a>	| <a href="'. $links_array[$link_index + 1]. '" rel="nofollow">Скачать</a><br>';
+				onclick="javascript: podPressShowHidePlayer(\''.($i + 1).'\',\''. $links_array[$link_index]. '\',320,267,\'true\'); return false;"><span id="podPressPlayerSpace_'.($i + 1).'_PlayLink">Открыть</span></a>	| <a href="'. $links_array[$link_index + 1]. '" rel="nofollow">Скачать</a><br>';
 		$content .= '<span class="podPressPlayerSpace" id="podPressPlayerSpace_'.($i + 1).'" style="display: block;z-index: 1;">&nbsp;</span>';
 		$content .= '</span>';
 		$content .= '</td>';
 		$content .= '<td>&nbsp;</td>';
 		$content .= '<td><span class="podPress_content"><img src="http://www.laitman.ru/wp-content/plugins/podpress/images/audio_mp3_icon.png" 
 				border="0" align="top" class="podPress_imgicon" alt="icon for podpress">&nbsp;<strong>Аудио (рус.)</strong>: <a href="#" rel="nofollow" 
-				onclick="javascript: podPressShowHidePlayer(\''.($i + 2).'\',\''. $links_array[$link_index + 2]. '\',300,30,\'true\'); return false;">
-				<span id="podPressPlayerSpace_'.($i + 2).'_PlayLink">Открыть</span></a>	| <a href="'. $links_array[$link_index + 3]. '" rel="nofollow">Скачать</a><br>';
+				onclick="javascript: podPressShowHidePlayer(\''.($i + 2).'\',\''. $links_array[$link_index + 2]. '\',300,30,\'true\'); return false;"><span id="podPressPlayerSpace_'.($i + 2).'_PlayLink">Открыть</span></a>	| <a href="'. $links_array[$link_index + 3]. '" rel="nofollow">Скачать</a><br>';
 		$content .= '<span class="podPressPlayerSpace" id="podPressPlayerSpace_'.($i + 2).'" style="display: block;z-index: 1;">&nbsp;</span>';
 		$content .= '</span>';
 		$content .= '</td>';
@@ -835,16 +833,14 @@ function bb_parse_content( $content ) {
 		$content .= '<tr>';
 		$content .= '<td><span class="podPress_content"><img src="http://www.laitman.ru/wp-content/plugins/podpress/images/video_mp4_icon.png" 
 				border="0" align="top" class="podPress_imgicon" alt="icon for podpress">&nbsp;<strong>Видео (ивр.)</strong>: <a href="#" rel="nofollow" 
-				onclick="javascript: podPressShowHidePlayer(\''.($i + 3).'\',\''. $links_array[$link_index + 4]. '\',320,267,\'true\'); return false;">
-				<span id="podPressPlayerSpace_'.($i + 3).'_PlayLink">Открыть</span></a>	| <a href="'. $links_array[$link_index + 5]. '" rel="nofollow">Скачать</a><br>';
+				onclick="javascript: podPressShowHidePlayer(\''.($i + 3).'\',\''. $links_array[$link_index + 4]. '\',320,267,\'true\'); return false;"><span id="podPressPlayerSpace_'.($i + 3).'_PlayLink">Открыть</span></a>	| <a href="'. $links_array[$link_index + 5]. '" rel="nofollow">Скачать</a><br>';
 		$content .= '<span class="podPressPlayerSpace" id="podPressPlayerSpace_'.($i + 3).'" style="display: block;z-index: 1;">&nbsp;</span>';
 		$content .= '</span>';
 		$content .= '</td>';
 		$content .= '<td>&nbsp;</td>';
 		$content .= '<td><span class="podPress_content"><img src="http://www.laitman.ru/wp-content/plugins/podpress/images/audio_mp3_icon.png"
 				border="0" align="top" class="podPress_imgicon" alt="icon for podpress">&nbsp;<strong>Аудио (ивр.)</strong>: <a href="#" rel="nofollow" 
-				onclick="javascript: podPressShowHidePlayer(\''.($i + 4).'\',\''. $links_array[$link_index + 6]. '\',300,30,\'true\'); return false;">
-				<span id="podPressPlayerSpace_'.($i + 4).'_PlayLink">Открыть</span></a>	| <a href="'. $links_array[$link_index + 7]. '" rel="nofollow">Скачать</a><br>';
+				onclick="javascript: podPressShowHidePlayer(\''.($i + 4).'\',\''. $links_array[$link_index + 6]. '\',300,30,\'true\'); return false;"><span id="podPressPlayerSpace_'.($i + 4).'_PlayLink">Открыть</span></a>	| <a href="'. $links_array[$link_index + 7]. '" rel="nofollow">Скачать</a><br>';
 		$content .= '<span class="podPressPlayerSpace" id="podPressPlayerSpace_'.($i + 4).'" style="display: block;z-index: 1;">&nbsp;</span>';
 		$content .= '</span>';
 		$content .= '</td>';
