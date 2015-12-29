@@ -237,7 +237,8 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 		   $this->current_item['meta'] = apply_filters('wpem_meta_data', $this->current_item['meta'] );
 		}
 		
-		 // Create post
+		//TODO: Modify Create post according to our needs -- bbdev
+		//Create post
 		$postid = $this->insertPost(
 			$this->current_item['title'],
 			$this->current_item['content'], 
