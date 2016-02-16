@@ -804,10 +804,12 @@ function bb_parse_content( $content ) {
 	foreach ($links as $link){
 		array_push($links_array, $link->getAttribute( 'href' ));
 	}
-	//$content = print_r($links_array, TRUE);
+	$links_array = array_reverse($links_array);  // we need to post lessons in descending order
 	
 	// Extracting titles
 	$titles = $dom->getElementsByTagName('h2');
+	$titles = iterator_to_array($titles);  // converting DOMNodeList object to array 
+	$titles = array_reverse($titles);
 	$i = 0;
 	$link_index = 0;
 	foreach ($titles as $title){
