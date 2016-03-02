@@ -798,9 +798,9 @@ function bb_parse_content( $content ) {
 	unset($content); // resetting content as we're already parsed it as dom object
 	$links_array = [];
 	$lessons = array(
-			'data' => array( 
-					'title' => "",
-					'links' => array()
+					array( 
+						'title' => "",
+						'links' => array()
 					)
 			);	
 	
@@ -811,6 +811,7 @@ function bb_parse_content( $content ) {
 	
  	$link_type = array("reserved" ,"RUS_VIDEO_PLAY", "RUS_VIDEO_DNL", "RUS_AUDIO_PLAY", "RUS_AUDIO_DNL", "HEB_VIDEO_PLAY", 			
  	"HEB_VIDEO_DNL", "HEB_AUDIO_PLAY", "HEB_AUDIO_DNL");
+	$index = 0;
 	foreach ($elements as $element){
 		if($element->nodeName == "div"){
 			$nodes = $element->childNodes;
@@ -818,15 +819,15 @@ function bb_parse_content( $content ) {
 					if ($node->nodeName == 'h2')
 						$title = $node->nodeValue;
 					if ($node->nodeName == 'a') {
-						$lessons['data']['title'] = $title;
-						$lessons['data']['links'][next($link_type)] = $node->getAttribute('href');
+						$lessons[$index]['title'] = $title;
+						$lessons[$index]['links'][next($link_type)] = $node->getAttribute('href');
 					}
 				}
+			$index++;
 			}
-			
 		}
 	$lessons = array_reverse($lessons);	
-	//print_r($lessons);
+	print_r($lessons);
 	
 	$i = 0;
 	foreach ($lessons as $lesson){
