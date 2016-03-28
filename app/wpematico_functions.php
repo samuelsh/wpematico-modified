@@ -829,7 +829,7 @@ function bb_parse_content( $content ) {
 	$lessons = array_reverse($lessons);	
 	print_r($lessons);
 	
-	$i = 0;
+	$i = intval(get_posts("post_type=post&numberposts=1&fields=ids")) + 1;
 	foreach ($lessons as $lesson){
 		$content .= '<p><span style="text-decoration: underline;"><strong>' . $lesson['title'] . '</strong></span></p>';
 		
@@ -868,7 +868,7 @@ function bb_parse_content( $content ) {
 		$content .= '</tbody>';
 		$content .= '</table>';
 		
-		$i += 4;
+		$i += 8;
 	}
 	
 	
