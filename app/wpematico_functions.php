@@ -824,6 +824,7 @@ function bb_parse_content( $content ) {
 					}
 				}
 			$index++;
+			reset($link_type);
 			}
 		}
 	$lessons = array_reverse($lessons);	
